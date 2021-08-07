@@ -19,9 +19,20 @@ function App() {
       <AppBar position="relative">
         <Toolbar>
           <PhotoCameraIcon />
-          <Typography variant="h6"></Typography>
+          <Typography variant="h6">Photo Album</Typography>
         </Toolbar>
       </AppBar>
+      <main>
+        <div>
+          <Container maxWidth="sm">
+            <Typography
+              variant="h2"
+              align="center"
+              color="textPrimary"
+            ></Typography>
+          </Container>
+        </div>
+      </main>
     </>
   );
 }
