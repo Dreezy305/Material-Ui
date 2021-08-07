@@ -16,6 +16,12 @@ function App() {
   return (
     <>
       <CssBaseline />
+      <AppBar position="relative">
+        <Toolbar>
+          <PhotoCameraIcon />
+          <Typography variant="h6"></Typography>
+        </Toolbar>
+      </AppBar>
     </>
   );
 }
