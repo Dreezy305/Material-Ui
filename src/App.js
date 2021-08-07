@@ -67,6 +67,7 @@ function App() {
             </div>
           </Container>
         </div>
+        <Container className={classes.cardGrid} maxWidth="md"></Container>
       </main>
     </>
   );
