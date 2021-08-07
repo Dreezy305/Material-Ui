@@ -12,8 +12,14 @@ import {
   Button,
 } from "@material-ui/core";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(() => ({
+  container: {},
+}));
 
 function App() {
+  const classes = useStyles();
   return (
     <>
       <CssBaseline />
@@ -24,7 +30,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <main>
-        <div>
+        <div className={classes.container}>
           <Container maxWidth="sm">
             <Typography
               variant="h2"
