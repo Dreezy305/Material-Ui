@@ -55,12 +55,12 @@ function App() {
               >
                 <Grid item xs>
                   <Button variant="contained" color="primary">
-                    Photos
+                    SEE MY PHOTOS
                   </Button>
                 </Grid>
                 <Grid item xs>
                   <Button variant="outlined" color="primary">
-                    Secondary
+                    SECONDARY ACTIONS
                   </Button>
                 </Grid>
               </Grid>
@@ -76,7 +76,22 @@ function App() {
                   image="https://source.unsplash.com/random"
                   title="Image title"
                 />
-                <CardContent className={classes.cardContent}></CardContent>
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography>
+                    This card media. The contents goes here
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">
+                    View
+                  </Button>
+                  <Button size="small" color="primary">
+                    Edit
+                  </Button>
+                </CardActions>
               </Card>
             </Grid>
           </Grid>
