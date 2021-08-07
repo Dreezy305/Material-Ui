@@ -46,7 +46,14 @@ function App() {
             <div>
               <Grid Container spacing={2} justify="center">
                 <Grid item>
-                  <Button></Button>
+                  <Button variant="contained" color="primary">
+                    Photos
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="primary">
+                    Secondary
+                  </Button>
                 </Grid>
               </Grid>
             </div>
