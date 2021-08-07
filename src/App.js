@@ -76,6 +76,7 @@ function App() {
                   image="https://source.unsplash.com/random"
                   title="Image title"
                 />
+                <CardContent className={classes.cardContent}></CardContent>
               </Card>
             </Grid>
           </Grid>
