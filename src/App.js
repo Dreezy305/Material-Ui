@@ -14,6 +14,8 @@ import Grid from "@material-ui/core/Grid";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import useStyles from "./styles";
 
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 function App() {
   const classes = useStyles();
   return (
@@ -72,7 +74,7 @@ function App() {
             <Grid item>
               <Card className={classes.card}>
                 <CardMedia
-                  classname={classes.cardMedia}
+                  className={classes.cardMedia}
                   image="https://source.unsplash.com/random"
                   title="Image title"
                 />
