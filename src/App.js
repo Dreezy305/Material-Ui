@@ -101,7 +101,15 @@ function App() {
           </Grid>
         </Container>
       </main>
-      <footer></footer>
+      <footer className={classes.footer}>
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
+        <Typography variant="subtitle1" align="center" color="textSecondary">
+          This is a nice footer. it is always located at the bottom of the main
+          tag n a semantic html
+        </Typography>
+      </footer>
     </>
   );
 }
