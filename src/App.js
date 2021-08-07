@@ -12,14 +12,7 @@ import {
   Button,
 } from "@material-ui/core";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme) => ({
-  container: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
-  },
-}));
+import useStyles from "./styles";
 
 function App() {
   const classes = useStyles();
@@ -28,7 +21,7 @@ function App() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <PhotoCameraIcon />
+          <PhotoCameraIcon className={classes.icon} />
           <Typography variant="h6">Photo Album</Typography>
         </Toolbar>
       </AppBar>
@@ -52,14 +45,20 @@ function App() {
               Hello This is a Photo Abum, i am making this look as long as
               possible so we can see how it looks like the browser
             </Typography>
-            <div>
-              <Grid Container spacing={2} justify="center">
-                <Grid item>
+            <div className={classes.buttons}>
+              <Grid
+                Container
+                spacing={4}
+                justifyContent="center"
+                direction="row"
+                alignItems="center"
+              >
+                <Grid item xs={6}>
                   <Button variant="contained" color="primary">
                     Photos
                   </Button>
                 </Grid>
-                <Grid item>
+                <Grid item xs={6}>
                   <Button variant="outlined" color="primary">
                     Secondary
                   </Button>
