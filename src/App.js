@@ -6,11 +6,11 @@ import {
   CardContent,
   CardMedia,
   CssBaseline,
-  Grid,
   Toolbar,
   Container,
   Button,
 } from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import useStyles from "./styles";
 
@@ -67,7 +67,19 @@ function App() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md"></Container>
+        <Container className={classes.cardGrid} maxWidth="md">
+          <Grid container spacing={4}>
+            <Grid item>
+              <Card className={classes.card}>
+                <CardMedia
+                  classname={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="Image title"
+                />
+              </Card>
+            </Grid>
+          </Grid>
+        </Container>
       </main>
     </>
   );
