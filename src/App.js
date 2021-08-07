@@ -9,10 +9,9 @@ import {
   Grid,
   Toolbar,
   Container,
+  Button,
 } from "@material-ui/core";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
-import Button from "@material-ui/core/Button";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 function App() {
   return (
@@ -44,17 +43,15 @@ function App() {
               Hello This is a Photo Abum, i am making this look as long as
               possible so we can see how it looks like the browser
             </Typography>
+            <div>
+              <Grid Container spacing={2} justify="center">
+                <Grid item>
+                  <Button></Button>
+                </Grid>
+              </Grid>
+            </div>
           </Container>
         </div>
-        <ButtonGroup
-          variant="contained"
-          color="primary"
-          aria-label="contained primary button group"
-        >
-          <Button>One</Button>
-          <Button>Two</Button>
-          <Button>Three</Button>
-        </ButtonGroup>
       </main>
     </>
   );
