@@ -10,12 +10,13 @@ import {
   Toolbar,
   Container,
 } from "@material-ui/core";
+import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 
 function App() {
   return (
-    <div className="App">
-      <Typography variant="h1">Material UI</Typography>
-    </div>
+    <>
+      <CssBaseline />
+    </>
   );
 }
 
