@@ -48,17 +48,17 @@ function App() {
             <div className={classes.buttons}>
               <Grid
                 Container
-                spacing={4}
+                spacing={2}
                 justifyContent="center"
                 direction="row"
                 alignItems="center"
               >
-                <Grid item xs={6}>
+                <Grid item xs>
                   <Button variant="contained" color="primary">
                     Photos
                   </Button>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs>
                   <Button variant="outlined" color="primary">
                     Secondary
                   </Button>

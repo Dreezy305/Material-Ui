@@ -5,8 +5,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
   },
-  icon: {},
-  buttons: {},
+  icon: {
+    marginRight: "20px",
+  },
+  buttons: {
+    marginTop: "40px",
+  },
 }));
 
 export default useStyles;
